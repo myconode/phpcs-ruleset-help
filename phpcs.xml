@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ruleset name="MyStandard">
+  <description>Developer Custom Coding Standards</description>
+
+  <arg name="error-severity" value="7"/>
+  <arg name="warning-severity" value="8"/>
+
+  <rule ref="Squiz.Strings.DoubleQuoteUsage">
+    <type>error</type>
+    <severity>10</severity>
+  </rule>
+
+  <rule ref="Squiz.Strings.EchoedStrings">
+    <type>error</type>
+    <severity>10</severity>
+ </rule>
+
+  <rule ref="Generic.Classes.DuplicateClassName">
+    <type>error</type>
+    <severity>10</severity>
+  </rule>
+
+
+  <rule ref="Generic.Files.LineLength">
+    <type>error</type>
+    <severity>10</severity>
+    <properties>
+      <property name="lineLimit" value="20"/>
+      <property name="absoluteLineLimit" value="30"/>
+    </properties>
+  </rule>
+
+
+  <rule ref="Generic.Commenting.Todo.CommentFound">
+    <message>Please review this TODO comment: %s</message>
+    <severity>10</severity>
+ </rule>
+
+</ruleset>
